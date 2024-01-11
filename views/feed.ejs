@@ -74,7 +74,7 @@
 
         <div class="post mt-10 w-full min-h-[50vh]">
           <div class="title px-4 flex items-center gap-2">
-            <div class="w-[8vw] h-[8vw] bg-sky-100 rounded-full overflow-hidden">
+            <div class="w-[8vw] h-[8vw] bg-sky-100 rounded-full  overflow-hidden">
 
 
 
@@ -82,7 +82,9 @@
             </div>
             <h4 class="text-sm"><%= elem.user.username %></h4>
             <h6 class="text-xs opacity-30">1d</h6>
-            <a href="/delete/post/<%= elem._id %>">...</a>
+            <div class="justify-end flex  w-full" href="/delete/post/<%= elem._id %>"><i class="fa-solid fa-trash"></i></a></div>
+
+            
           </div>
           <div class="w-full h-96 mt-4 bg-sky-100 overflow-hidden">
             <img class="w-full h-full object-cover" src="/images/uploads/<%= elem.picture %>" alt="">
